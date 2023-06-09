@@ -3,22 +3,24 @@
 
 const scriptsInEvents = {
 
-	async Egame_Event9(runtime, localVars)
+	async Egame_Event4_Act4(runtime, localVars)
 	{
-		// Отримуємо доступ до SVG елемента за його ID
-		var svgElement = document.getElementById("et");
-		
-		// Отримуємо всі елементи <path> всередині SVG
-		var pathElements = svgElement.querySelectorAll("path");
-		
-		// Додаємо обробник події click до кожного елемента <path>
-		pathElements.forEach(function(pathElement) {
-		  pathElement.addEventListener("click", function(event) {
-		    // Код, який виконується при кліку на <path>
-		    console.log("Клікнуто на <path>");
-		  });
-		});
-		
+		localStorage.setItem('color', "#0000FF");
+	},
+
+	async Egame_Event5_Act4(runtime, localVars)
+	{
+		localStorage.setItem('color', "#FF0000");
+	},
+
+	async Egame_Event6_Act4(runtime, localVars)
+	{
+		localStorage.setItem('color', "#FFFF00");
+	},
+
+	async Egame_Event7_Act4(runtime, localVars)
+	{
+		localStorage.setItem('color', "#FFFFFF");
 	}
 
 };
